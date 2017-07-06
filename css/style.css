@@ -55,7 +55,7 @@ html, body {
             overflow-y: auto;
         }
         .contents {
-            background: #ffebcd;
+            background: #f7ffcd;
             height: 100%;
             width: calc(100% - 195px);
             padding: 30px;
@@ -110,23 +110,26 @@ html, body {
 /* 600px以下 */
 @media screen and ( max-width:600px )
 {
+    .wrapper {
+    width: 100%;
+    height: 100%;
+}
     .header {
-        min-width: 600px;
+        min-width: 100%;
     }
     .container {
-        min-width: 600px;
+        min-width: 100%;
     }
     .side_nav {
         display: none;
         min-width: 300px;
     }
-
     .icon-menu {
         display: inline-block;
         max-width: 24px;
         position: fixed;
         top: 0px;
-        left: 1px;
+        left: 3px;
         z-index: 100;
     }
         .contents {
@@ -134,13 +137,16 @@ html, body {
             width: 100%;
             padding: 30px;
             overflow-y: auto;
+            width: 100%;
         }
             .contents_area {
                 padding: 30px 30px 0 30px;
+                        max-width: 100%;
             }
             .contents_area_box {
                 margin: 0 0 30px 0;
-                min-width: 463px;
+                width: 100%;
+                min-width: 263px;
             }
             .contents_area_box_item-text {
                 width: 300px;
@@ -156,5 +162,7 @@ html, body {
         display: block;
         z-index: 200;
     }
-
+    .icon-close {
+        display: none;
+    }
 }
