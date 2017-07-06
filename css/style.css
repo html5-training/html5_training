@@ -12,6 +12,16 @@ html, body {
 .icon-menu {
     display: none;
 }
+.site-title {
+    display: inline-block;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+    position: fixed;
+    left: 10px;
+    top: 2px;
+}
     .header,
     .footer {
         background-color: #ade6d7;
@@ -120,7 +130,9 @@ html, body {
         display: none;
         min-width: 300px;
     }
-
+.site-title {
+    left: 55px;
+}
     .icon-menu {
         display: inline-block;
         max-width: 50px;
