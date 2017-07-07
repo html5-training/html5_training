@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>HTML5学習2</title>
+    <title>HTML5学習</title>
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
@@ -12,6 +12,7 @@
         <header class="header">
             <a href="#sideNav" id="iconMenu">
                 <img class="icon-menu" src="img/menu-icon.png" alt="" />
+                <img class="icon-menu icon-close" src="img/menu-close.png" alt="" />
             </a>
         </header><!-- /header -->
         <div class="container">
@@ -43,7 +44,7 @@
                     </ul>
                 </nav>
                 <footer class="footer">
-                    <p>footer</p>
+                    <p>© 2017 sakai</p>
                 </footer>
             </div>
             <div class="contents">
@@ -221,6 +222,7 @@
                     $(".contents").toggleClass("nav_style-hide");
                     $(".contents").toggleClass("nav_style-blur");
                     $("#sideNav").toggleClass("nav_style-view");
+                    $(".icon-menu").toggleClass("icon-close");
             });
         });
 </script>
