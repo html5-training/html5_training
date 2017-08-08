@@ -22,15 +22,23 @@ html, body {
     left: 10px;
     top: 2px;
 }
+
     .header,
     .footer {
-        background-color: #ade6d7;
+        background-color: #96CEB4;
     }
     .header {
         min-width: 1000px;
-        background-image: url("../img/header2.png");
+        /*background-image: url("../img/header2.png");*/
         height: 50px;
     }
+    .header:after {
+        content: " ";
+        background: url(../img/icon-header.png);
+        height: 50px;
+        background-size: contain;
+        margin-top: -11px;
+}
     .footer {
         text-align: center;
     }
@@ -44,10 +52,11 @@ html, body {
     .side_nav-items li a {
         list-style: none;
         text-decoration: none;
-        color: #AA8B9B;
+        color: #96CEB4;
+        /*color: #FFAD29;*/
         font-weight: bold;
     }
-    .side_nav-items li {
+    nav .side_nav-items li {
         margin: 0 0 10px 0;
     }
     .container {
@@ -65,7 +74,7 @@ html, body {
             overflow-y: auto;
         }
         .contents {
-            background: #f7ffcd;
+            background: #FFEEAD;
             height: 100%;
             width: calc(100% - 195px);
             padding: 30px;
@@ -91,7 +100,7 @@ html, body {
                 margin: 30px 30px 0 0;
             }
                 .contents_area_box_title {
-                    border-bottom: 2px solid #9FC0B9;
+                    border-bottom: 2px solid #FF6F69;
                     margin: 0 0 20px 0;
                 }
                 .contents_area_box_item {
@@ -112,11 +121,26 @@ html, body {
                     .text-main {
                         margin: 0 0 5px 10px;
                         display: -webkit-box;
+                        word-wrap: break-word;
+                    }
+                    .text-ellipsis {
                         -webkit-box-orient: vertical;
                         -webkit-line-clamp: 4;
                         overflow: hidden;
-                        word-wrap: break-word;
                     }
+    .global_nav-style li a{
+        position: relative;
+        display: block;
+        margin: 0 15px;
+    }
+    .global_nav-style li a:before {
+        font-family: 'FontAwesome';
+        content: "❤";
+        position: absolute;
+        top: 50%;
+        left: -28px;
+        margin-top: -11px;
+    }
 /* 600px以下 */
 @media screen and ( max-width:600px )
 {
@@ -141,8 +165,8 @@ html, body {
         display: inline-block;
         max-width: 50px;
         position: fixed;
-        top: 0px;
-        left: 3px;
+        top: 8px;
+        left: 10px;
         z-index: 100;
     }
         .contents {
@@ -154,11 +178,13 @@ html, body {
         }
             .contents_area {
                 padding: 30px 30px 0 30px;
-                        max-width: 100%;
+                max-width: 100%;
             }
             .contents_area_box {
                 margin: 0 0 30px 0;
                 width: 100%;
+            }
+            .w-list_view_item {
                 min-width: 263px;
             }
             .contents_area_box_item-text {
