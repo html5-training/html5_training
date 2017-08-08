@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HTML5学習-記事風ページ</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style-article.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <a href="#sideNav" id="iconMenu">
+                <img class="icon-menu" src="../img/menu-icon.png" alt="" />
+                <img class="icon-menu icon-close" src="../img/menu-close.png" alt="" />
+                <p class="site-title"><a href="../index.html">HTML5 TRAINING</a></p>
+            </a>
+        </header><!-- /header -->
+        <div class="container">
+            <div class="side_nav" id="sideNav">
+                <nav>
+                    <ul class="side_nav-items global_nav-style">
+                        <li><a href="#" title="nav">nav</a></li>
+                        <li><a href="#" title="nav">nav</a></li>
+                        <li><a href="#" title="nav">nav</a></li>
+                        <li><a href="#" title="nav">nav</a></li>
+                        <li><a href="#" title="nav">nav</a></li>
+                        <li><a href="#" title="nav">nav</a></li>
+                        <li><a href="#" title="nav">nav</a></li>
+                        <li><a href="#" title="nav">nav</a></li>
+                        <li><a href="#" title="nav">nav</a></li>
+                        <li><a href="#" title="nav">nav</a></li>
+                        <li><a href="#" title="nav">nav</a></li>
+                        <li><a href="#" title="nav">nav</a></li>
+                        <li><a href="#" title="nav">nav</a></li>
+                        <li><a href="#" title="nav">nav</a></li>
+                        <li><a href="#" title="nav">nav</a></li>
+                        <li><a href="#" title="nav">nav</a></li>
+                        <li><a href="#" title="nav">nav</a></li>
+                        <li><a href="#" title="nav">nav</a></li>
+                        <li><a href="#" title="nav">nav</a></li>
+                        <li><a href="#" title="nav">nav</a></li>
+                        <li><a href="#" title="nav">nav</a></li>
+                        <li><a href="#" title="nav">nav</a></li>
+                    </ul>
+                </nav>
+                <footer class="footer">
+                    <p>© 2017 sakai</p>
+                </footer>
+            </div>
+            <div class="contents">
+                <a href="javascript:void(0);" id="iconLocalNavSmall" class="icon-local_nav-small">
+                    <img class="icon-local_nav" src="../img/menu-local.png" alt="" />
+                    <img class="icon-local_nav icon-close" src="../img/menu-local-close.png" alt="" />
+                </a>
+
+                <section class="section">
+                    <div class="title_area">
+                        <div class="title_area-top">
+                            <time datetime="2017-07-11" class="posts_time"><small>July 11th, 2017</small></time>
+                            <h1 class="contents_title">記事風ページ(仮)</h1>
+                        </div>
+
+                        <div class="title_area-bottom">
+                            <p class="title_area-bottom-text">
+                                <span class="mg-btm-20 content-block">HTML5のタグをまとめたページです。<br>普段の使用頻度が高くないものを中心に、自分が気になったものを抜粋しました。</span>
+                                <span class="content-block">■ 参考サイト - <cite><a href="http://www.tagindex.com/html5/elements/index.html">TAG index</a></cite></span></p>
+                            </p>
+                            <figure class="title_area-bottom-img">
+                                <img class="img-article-header" src="../img/article-header.png" alt="" />
+                                <figcaption class="img-caption-article-header">▲やる気が出る画像</figcaption>
+                            </figure>
+                        </div>
+                        <div class="contents_area">
+                             <article class="contents_area_box">
+                                <h2 class="contents_area_box_title topics-title" id="topicsPre">&lt;pre&gt;</h2>
+                                <div class="contents_area_box_item">
+                                    <div class="topics_area">
+                                        <p class="text-main">ソースコードを整形済みテキストとして表示する際に使用。<br>＜  と  ＞ は特殊文字扱いになるので、それぞれ&nbsp;&amp;lt;&nbsp;と&nbsp;&amp;gt;&nbsp;に置換する必要がある。</p>
+                                        <p>■ サンプルコード</p>
+                                        <span class="sample_code pd-sample_code">
+                                            &lt;pre&gt;&amp;lt;strong&amp;gt;健康ミネラル麦茶&amp;lt;/strong&amp;gt;<br>ミネラルバランスをととのえるため、&amp;lt;i&amp;gt;飲用海洋深層水&amp;lt;/i&amp;gt;を少量加えています。&lt;/pre&gt;
+                                        </span>
+                                        <p>■ ブラウザ表示</p>
+                                        <span class="sample_code pd-sample_code">
+                                            <pre>&lt;strong&gt;健康ミネラル麦茶&lt;/strong&gt;<br>ミネラルバランスをととのえるため、&lt;i&gt;飲用海洋深層水&lt;/i&gt;を少量加えています。</pre>
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="contents_area_box">
+                                <h2 class="contents_area_box_title topics-title" id="topicsBlockquote">&lt;blockquote&gt;</h2>
+                                <div class="contents_area_box_item">
+                                    <div class="topics_area">
+                                        <p class="text-main">「段落」単位で引用する際に使用。<br>フレーズ単位での引用は、q要素を使用する。<br>引用元の情報をblockquote内に配置する場合は、cite要素 または footer要素で囲う必要がある。</p>
+                                        <p>■ サンプルコード</p>
+                                        <span class="sample_code pd-sample_code">
+                                            &lt;blockquote&gt;<br>このページのトピックスは右のサイトを参考にまとめています - &lt;cite&gt;&lt;a&gt;<a href="http://www.tagindex.com/html5/elements/index.html">TAG index</a>&lt;/a&gt;&lt;/cite&gt;<br>&lt;/blockquote&gt;
+                                        </span>
+                                        <p>■ ブラウザ表示</p>
+                                        <span class="sample_code pd-sample_code">
+                                            <blockquote>このページのトピックスは右のサイトを参考にまとめています - <cite><a href="http://www.tagindex.com/html5/elements/index.html">TAG index</a></cite></blockquote>
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="contents_area_box">
+                                <h2 class="contents_area_box_title topics-title" id="topicsHr">&lt;hr&gt;</h2>
+                                <div class="contents_area_box_item">
+                                    <div class="topics_area">
+                                        <p class="text-main">article内におけるテーマ(話題)の区切りで使用。<br>段落単位の区切りで使うもので、「セクション間の区切り線」として配置するのは不適切。<br>※上下に0.5emのmarginが入り、線の太さや色はブラウザ間で若干違いがある。<br>※閉じタグなし</p>
+                                        <p>■ サンプルコード</p>
+                                        <span class="sample_code pd-sample_code">
+                                            &lt;hr&gt;
+                                        </span>
+                                        <p>■ ブラウザ表示</p>
+                                        <span class="sample_code pd-sample_code">
+                                            <hr>
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="contents_area_box">
+                                <h2 class="contents_area_box_title topics-title" id="topicsOl">&lt;ol&gt;</h2>
+                                <div class="contents_area_box_item">
+                                    <div class="topics_area">
+                                        <p class="text-main">順序付きのリストをつくる際に使用。<br>リスト内の項目はli要素で表す。</p>
+                                        <p>■ サンプルコード</p>
+                                        <span class="sample_code pd-sample_code">
+                                            &lt;ol&gt;<br>&lt;li&gt;リスト項目1&lt;/li&gt;<br>&lt;li&gt;リスト項目2&lt;/li&gt;<br>&lt;li&gt;リスト項目3&lt;/li&gt;<br>&lt;li&gt;リスト項目4&lt;/li&gt;<br>&lt;/ol&gt;
+                                        </span>
+                                        <p>■ ブラウザ表示</p>
+                                        <span class="sample_code">
+                                            <ol class="pd-sample_code">
+                                                <li>リスト項目1</li>
+                                                <li>リスト項目2</li>
+                                                <li>リスト項目3</li>
+                                                <li>リスト項目4</li>
+                                            </ol>
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="contents_area_box">
+                                <h2 class="contents_area_box_title topics-title" id="topicsDl">&lt;dl&gt;</h2>
+                                <div class="contents_area_box_item">
+                                    <div class="topics_area">
+                                        <p class="text-main">名前（dt要素）と値（dd要素）のグループで構成される記述リストを表す。</p>
+                                        <p>■ サンプルコード</p>
+                                        <span class="sample_code pd-sample_code">
+                                            &lt;dl&gt;<br>&lt;dt&gt;名前&lt;/dt&gt;<br>&lt;dd&gt;名前に対する値&lt;/dd&gt;<br>&lt;/dl&gt;
+                                        </span>
+                                        <p>■ ブラウザ表示</p>
+                                        <span class="sample_code pd-sample_code">
+                                            <dl>
+                                                <dt><dfn>スマートフォン</dfn></dt>
+                                                <dd>高機能な携帯電話のこと。スマホと略されることもある。</dd>
+                                            </dl>
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="contents_area_box">
+                                <h2 class="contents_area_box_title topics-title" id="topicsDt">&lt;dt&gt;</h2>
+                                <div class="contents_area_box_item">
+                                    <div class="topics_area">
+                                        <p class="text-main">記述リスト（dl要素）における名前部分を表す。<br>dt要素はdd要素（値）とセットで使用。<br>dt要素の内容は1つのdl要素内で重複させない。</p>
+                                        <p>■ サンプルコード</p>
+                                        <span class="sample_code pd-sample_code">
+                                            &lt;dl&gt;<br>&lt;dt&gt;名前&lt;/dt&gt;<br>&lt;dd&gt;名前に対する値&lt;/dd&gt;<br>&lt;/dl&gt;
+                                        </span>
+                                        <p>■ ブラウザ表示</p>
+                                        <span class="sample_code pd-sample_code">
+                                            <dl>
+                                                <dt>編集者</dt>
+                                                <dd>AAA</dd>
+                                                <dd>BBB</dd>
+                                            </dl>
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="contents_area_box">
+                                <h2 class="contents_area_box_title topics-title" id="topicsDd">&lt;dd&gt;</h2>
+                                <div class="contents_area_box_item">
+                                    <div class="topics_area">
+                                        <p class="text-main">記述リスト（dl要素）における値部分を表す。<br>dd要素はdt要素（名前）とセットで使用。<br>1つの用語（名前）に対して複数の説明（値）がある場合、dt要素の後に複数のdd要素を配置。また、複数の段落で構成された1つの説明文の場合、1つのdd要素内に記述。</p>
+                                        <p>■ サンプルコード</p>
+                                        <span class="sample_code pd-sample_code">
+                                            &lt;dl&gt;<br>&lt;dt&gt;名前&lt;/dt&gt;<br>&lt;dd&gt;名前に対する値&lt;/dd&gt;<br>&lt;/dl&gt;
+                                        </span>
+                                        <p>■ ブラウザ表示</p>
+                                        <span class="sample_code pd-sample_code">
+                                            <dl>
+                                                <dt>やさしい麦茶</dt>
+                                                <dd class="volume">650ml</dd>
+                                                <dd class="category">清涼飲料水</dd>
+                                                <dd class="company">サントリーフーズ</dd>
+                                            </dl>
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="contents_area_box">
+                                <h2 class="contents_area_box_title topics-title" id="topicsFigure">&lt;figure&gt;</h2>
+                                <div class="contents_area_box_item">
+                                    <div class="topics_area">
+                                        <p class="text-main">本文から参照される図版（挿絵、図表、写真、ソースコード等）を表す。<br>figure要素は離れた場所に配置した場合でも、本文には影響がない内容で使用可能。</p>
+                                        <p>■ サンプルコード</p>
+                                        <span class="sample_code pd-sample_code">
+                                            &lt;figure&gt;<br>参照される図版<br>&lt;/figure&gt;
+                                        </span>
+                                        <p>■ ブラウザ表示</p>
+                                        <span class="sample_code pd-sample_code">
+                                            <figure class="kiiroitori">
+                                                <figcaption>キイロイトリ</figcaption>
+                                                <p><img class="img-figure" src="../img/kiiroitori.png" /></p>
+                                                <p>リラックマの同居人のペット</p>
+                                           </figure>
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+                             <article class="contents_area_box">
+                                <h2 class="contents_area_box_title topics-title" id="topicsMain">&lt;main&gt;</h2>
+                                <div class="contents_area_box_item">
+                                    <div class="topics_area">
+                                        <p class="text-main">文章のメインコンテンツを表す。<br>サイト内で共通使用されるグローバルナビゲーションは配置不可&nbsp;※ページ内リンク等のローカルナビゲーションであれば配置可能</p>
+                                        <p>■ サンプルコード</p>
+                                        <span class="sample_code pd-sample_code">
+                                            &lt;main&gt;<br>メインコンテンツ<br>&lt;/main&gt;
+                                        </span>
+                                        <p>■ ブラウザ表示</p>
+                                        <span class="sample_code pd-sample_code">
+                                            <main>
+                                                <h1>メインコンテンツ</h1>
+                                                <article id="article1">
+                                                    <h2>記事その1</h2>
+                                                    ...
+                                                </article>
+                                                <article id="article2">
+                                                    <h2>記事その2</h2>
+                                                    ...
+                                                </article>
+                                                <article id="article3">
+                                                    <h2>記事その3</h2>
+                                                    ...
+                                                </article>
+                                            </main>
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="contents_area_box">
+                                <h2 class="contents_area_box_title topics-title" id="topicsCite">&lt;cite&gt;</h2>
+                                <div class="contents_area_box_item">
+                                    <div class="topics_area">
+                                        <p class="text-main">作品のタイトル、著者、URLを表す際に使用。<br>引用元を示す際にもcite要素の使用が可能。<br>※デフォルトはイタリック体</p>
+                                        <p>■ サンプルコード</p>
+                                        <span class="sample_code pd-sample_code">
+                                            &lt;cite&gt;<br>作品のタイトル、著者、URL<br>&lt;/cite&gt;
+                                        </span>
+                                        <p>■ ブラウザ表示</p>
+                                        <span class="sample_code pd-sample_code">
+                                            <p>新しい作品をアップロードしました！</p>
+                                            <p><cite><a href="https://www.youtube.com/watch?***">https://www.youtube.com/watch?***</a></cite></p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="contents_area_box">
+                                <h2 class="contents_area_box_title topics-title" id="topicsQ">&lt;q&gt;</h2>
+                                <div class="contents_area_box_item">
+                                    <div class="topics_area">
+                                        <p class="text-main">フレーズ単位で引用する際に使用。（段落単位はblockquote）<br>一般的なブラウザでは、q要素の前後に引用符がつけられるため自分で入力はしない。スタイルシートで指定することも可能。
+                                        </p>
+                                        <p>■ サンプルコード</p>
+                                        <span class="sample_code pd-sample_code">
+                                            &lt;q&gt;<br>引用部分<br>&lt;/q&gt;
+                                        </span>
+                                        <p>■ ブラウザ表示</p>
+                                        <span class="sample_code pd-sample_code">
+                                            <q>引用部分を表示する。</q><br>
+                                            <q>引用の中で<q>引用部分</q>を表示する。</q>
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="contents_area_box">
+                                <h2 class="contents_area_box_title topics-title" id="topicsDfn">&lt;dfn&gt;</h2>
+                                <div class="contents_area_box_item">
+                                    <div class="topics_area">
+                                        <p class="text-main">用語の意味を説明する際に、その用語の部分に対してこの要素を使用。<br>dfn要素を使用する場合、dfn要素の親となる段落かセクション、または記述リストの同じグループ内にその用語に対する定義も含めなければならない。<br>定義を伴わない用語の場合は、i要素やb要素等を状況に合わせて使用する。
+                                        </p>
+                                        <p>■ サンプルコード</p>
+                                        <span class="sample_code pd-sample_code">
+                                            &lt;dfn&gt;<br>定義される用語<br>&lt;/dfn&gt;
+                                        </span>
+                                        <p>■ ブラウザ表示</p>
+                                        <span class="sample_code pd-sample_code">
+                                            <dl>
+                                                <dt><dfn>HTML</dfn></dt>
+                                                <dd>Webページを作成するためのマークアップ言語です。</dd>
+                                            </dl>
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="contents_area_box">
+                                <h2 class="contents_area_box_title topics-title" id="topicsAbbr">&lt;abbr&gt;</h2>
+                                <div class="contents_area_box_item">
+                                    <div class="topics_area">
+                                        <p class="text-main">略語や頭字語を表す際に使用。<br>abbr要素にtitle属性を指定すると、略される前の正式名称を示すことが可能。<br>※多くの人が知っているであろう略語の場合は、無理にabbr要素を使う必要はない。
+                                        </p>
+                                        <p>■ サンプルコード</p>
+                                        <span class="sample_code pd-sample_code">
+                                            &lt;abbr&gt;<br>略語や頭字語を表す<br>&lt;/abbr&gt;
+                                        </span>
+                                        <p>■ ブラウザ表示</p>
+                                        <span class="sample_code pd-sample_code">
+                                            <abbr title="HyperText Markup Language">HTML</abbr>
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="contents_area_box">
+                                <h2 class="contents_area_box_title topics-title" id="topicsSub">&lt;sub&gt;</h2>
+                                <div class="contents_area_box_item">
+                                    <div class="topics_area">
+                                        <p class="text-main">下付き文字を表す際に使用。<br>sub要素は、下付き文字に特定の意味（数式や化学式等）がある場合のみ使用可能。<br>
+                                        </p>
+                                        <p>■ サンプルコード</p>
+                                        <span class="sample_code pd-sample_code">
+                                            &lt;sub&gt;下付き文字&lt;/sub&gt;
+                                        </span>
+                                        <p>■ ブラウザ表示</p>
+                                        <span class="sample_code pd-sample_code">
+                                            <p>水の化学式はH<sub>2</sub>Oです。</p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="contents_area_box">
+                                <h2 class="contents_area_box_title topics-title" id="topicsSup">&lt;sup&gt;</h2>
+                                <div class="contents_area_box_item">
+                                    <div class="topics_area">
+                                        <p class="text-main">上付き文字を表す際に使用。<br>sup要素は、上付き文字に特定の意味（数式や化学式等）がある場合のみ使用可能。<br>
+                                        </p>
+                                        <p>■ サンプルコード</p>
+                                        <span class="sample_code pd-sample_code">
+                                            &lt;sup&gt;上付き文字&lt;/sup&gt;
+                                        </span>
+                                        <p>■ ブラウザ表示</p>
+                                        <span class="sample_code pd-sample_code">
+                                            <p>質量とエネルギーの関係式：<var>E</var>=<var>m</var><var>c</var><sup>2</sup></p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="contents_area_box">
+                                <h2 class="contents_area_box_title topics-title" id="topicsTime">&lt;time&gt;</h2>
+                                <div class="contents_area_box_item">
+                                    <div class="topics_area">
+                                        <p class="text-main">正確な日付や時刻を表します。<br>time要素は24時間表記の時刻、またはグレゴリオ暦による正確な日付を表す際に使用。<br>
+                                        </p>
+                                        <p>■ サンプルコード</p>
+                                        <span class="sample_code pd-sample_code">
+                                            &lt;time&gt;YYYY-MM-DDThh:mm:ssTZD&lt;/time&gt;
+                                        </span>
+                                        <p>■ ブラウザ表示</p>
+                                        <span class="sample_code pd-sample_code">
+                                            <time>2017-08-08T13:05:30+09:00</time>
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="contents_area_box">
+                                <h2 class="contents_area_box_title topics-title" id="topicsMark">&lt;mark&gt;</h2>
+                                <div class="contents_area_box_item">
+                                    <div class="topics_area">
+                                        <p class="text-main">特定のテキストを目立たせたい場合に使用。<br>・例 ⇒ 検索ワードに一致する文字列、話題の対象になっているテキスト<br>※この要素はその文章における重要性や強調を表すものではなく、ユーザが参照しやすいように目立たせることが目的。
+                                        </p>
+                                        <p>■ サンプルコード</p>
+                                        <span class="sample_code pd-sample_code">
+                                            &lt;mark&gt;ハイライト表示&lt;/mark&gt;
+                                        </span>
+                                        <p>■ ブラウザ表示</p>
+                                        <span class="sample_code pd-sample_code">
+                                            <h2><b>html</b>の検索結果</h2>
+                                            <p>ホームページの作成に役立つ<mark>HTML</mark>とCSSのリファレンス。TAG indexの<mark>HTML</mark>リファレンスは ...</p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="contents_area_box">
+                                <h2 class="contents_area_box_title topics-title" id="topicsRuby">&lt;ruby&gt;</h2>
+                                <div class="contents_area_box_item">
+                                    <div class="topics_area">
+                                        <p class="text-main">ルビ（ひらがな）をふるテキスト範囲を表す際に使用。<br>この要素内に対象テキスト（ルビベース）を配置して、rt要素でルビテキストを指定。
+                                        </p>
+                                        <p>■ サンプルコード</p>
+                                        <span class="sample_code pd-sample_code">
+                                            &lt;ruby&gt;<br>例&lt;rt&gt;れい&lt;/rt&gt;<br>題&lt;rt&gt;だい&lt;/rt&gt;<br>
+                                            &lt;/ruby&gt;
+                                        </span>
+                                        <p>■ ブラウザ表示</p>
+                                        <span class="sample_code pd-sample_code">
+                                            <p>
+                                            私の名前は
+                                            <ruby>
+                                            山田<rt>やまだ</rt>
+                                            太郎<rt>たろう</rt>
+                                            </ruby>
+                                            です。
+                                            </p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="contents_area_box">
+                                <h2 class="contents_area_box_title topics-title" id="topicsRt">&lt;rt&gt;</h2>
+                                <div class="contents_area_box_item">
+                                    <div class="topics_area">
+                                        <p class="text-main">対象テキスト（ルビベース）にルビテキストを表す際に使用。<br>この要素はruby要素またはrtc要素の子要素として使用。
+                                        </p>
+                                        <p>■ サンプルコード</p>
+                                        <span class="sample_code pd-sample_code">
+                                            &lt;ruby&gt;<br>例&lt;rt&gt;れい&lt;/rt&gt;<br>題&lt;rt&gt;だい&lt;/rt&gt;<br>
+                                            &lt;/ruby&gt;
+                                        </span>
+                                        <p>■ ブラウザ表示</p>
+                                        <span class="sample_code pd-sample_code">
+                                            <p>
+                                            私の名前は
+                                            <ruby>
+                                            山田<rt>やまだ</rt>
+                                            太郎<rt>たろう</rt>
+                                            </ruby>
+                                            です。
+                                            </p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="contents_area_box">
+                                <h2 class="contents_area_box_title topics-title" id="topicsRtc">&lt;rtc&gt;</h2>
+                                <div class="contents_area_box_item">
+                                    <div class="topics_area">
+                                        <p class="text-main">ルビテキストのコンテナを表す。<br>この要素はruby要素の子要素として使用。<br>※rtc要素はルビベースに対して2種類のルビをふりたい場合に使用。(firefoxのみ有効？)
+                                        </p>
+                                        <p>■ サンプルコード</p>
+                                        <span class="sample_code pd-sample_code">
+                                            &lt;ruby&gt;<br>例&lt;rt&gt;れい&lt;/rt&gt;<br>題&lt;rt&gt;だい&lt;/rt&gt;<br>&lt;rtc&gt;example&lt;/rtc&gt;<br>
+                                            &lt;/ruby&gt;
+                                        </span>
+                                        <p>■ ブラウザ表示</p>
+                                        <span class="sample_code pd-sample_code">
+                                            <ruby>
+                                            朝<rt>あさ</rt>寝<rt>ね</rt>坊<rt>ぼう</rt>
+                                            <rtc>Oversleeping</rtc>
+                                            </ruby>
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="contents_area_box">
+                                <h2 class="contents_area_box_title topics-title" id="topicsRp">&lt;rp&gt;</h2>
+                                <div class="contents_area_box_item">
+                                    <div class="topics_area">
+                                        <p class="text-main">ルビテキストを囲む括弧記号などを表す。<br>この要素はruby要素の子要素として使用。<br>rp要素の内容は、ルビ未対応のブラウザで表示される。（対応ブラウザでは非表示）
+                                        </p>
+                                        <p>■ サンプルコード</p>
+                                        <span class="sample_code pd-sample_code">
+                                            &lt;ruby&gt;<br>例&lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;れい&lt;/rt&gt;<br>題&lt;rt&gt;だい&lt;/rt&gt;<br><br>
+                                            &lt;/ruby&gt;
+                                        </span>
+                                        <p>■ ブラウザ表示</p>
+                                        <span class="sample_code pd-sample_code">
+                                            <p>
+                                            私の名前は
+                                            <ruby>
+                                            山田<rp>（</rp><rt>やまだ</rt><rp>）</rp>
+                                            太郎<rp>（</rp><rt>たろう</rt><rp>）</rp>
+                                            </ruby>
+                                            です。
+                                            </p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="contents_area_box">
+                                <h2 class="contents_area_box_title topics-title" id="topicsStrong">&lt;strong&gt;</h2>
+                                <div class="contents_area_box_item">
+                                    <div class="topics_area">
+                                        <p class="text-main">テキストの強い重要性を表す。<br>strong要素を入れ子にすることで、重要性の度合いを高めることが可能。<br>
+                                        </p>
+                                        <p>■ サンプルコード</p>
+                                        <span class="sample_code pd-sample_code">
+                                            &lt;strong&gt;重要性を表したいテキスト&lt;/strong&gt;
+                                        </span>
+                                        <p>■ ブラウザ表示</p>
+                                        <span class="sample_code pd-sample_code">
+                                            <p><strong>重要なテキストの中で<strong>より強い重要性</strong>を表しています。</strong></p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="contents_area_box">
+                                <h2 class="contents_area_box_title topics-title" id="topicsSpan">&lt;span&gt;</h2>
+                                <div class="contents_area_box_item">
+                                    <div class="topics_area">
+                                        <p class="text-main">特定の範囲（<ruby>段落内で使用するようなコンテンツ<rt>フレージング・コンテンツ</rt></ruby>）を1つのグループとしてまとめる。<br>この要素自体は特別な意味は持たず、class属性、id属性、lang属性などと併せて使用。<br>
+                                        </p>
+                                        <p>■ サンプルコード</p>
+                                        <span class="sample_code pd-sample_code">
+                                            &lt;p&gt;緑色は、英語では&lt;span lang="en"&gt;Green&lt;/span&gt;、英語では&lt;span lang="it"&gt;Verde&lt;/span&gt;と表記します。&lt;/p&gt;
+                                        </span>
+                                        <p>■ ブラウザ表示</p>
+                                        <span class="sample_code pd-sample_code">
+                                            <p>緑色は、英語では<span lang="en">Green</span>、イタリア語では<span lang="it">Verde</span>と表記します。</p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="contents_area_box">
+                                <h2 class="contents_area_box_title topics-title" id="topicsBr">&lt;br&gt;</h2>
+                                <div class="contents_area_box_item">
+                                    <div class="topics_area">
+                                        <p class="text-main">詩や住所などのように、改行がコンテンツの一部を形成する場合に使用可能。<br>改段落となる場合はp要素を使用。<br>
+                                        </p>
+                                        <p>■ サンプルコード</p>
+                                        <span class="sample_code pd-sample_code">
+                                            &lt;p&gt;〒000-0000&lt;br&gt;東京都千代田区X-X-XX&lt;br&gt;hogehogeビル 10F&lt;/p&gt;
+                                        </span>
+                                        <p>■ ブラウザ表示</p>
+                                        <span class="sample_code pd-sample_code">
+                                            <p>〒000-0000<br>東京都千代田区X-X-XX<br>hogehogeビル 10F</p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="contents_area_box">
+                                <h2 class="contents_area_box_title topics-title" id="topicsWbr">&lt;wbr&gt;</h2>
+                                <div class="contents_area_box_item">
+                                    <div class="topics_area">
+                                        <p class="text-main">折り返しが行われないテキスト（英単語）に対して、改行の機会を与える。
+                                        </p>
+                                        <p>■ サンプルコード</p>
+                                        <span class="sample_code pd-sample_code">
+                                            ☆wbrタグなし<p class="mg-btm-20">&lt;p&gt;LongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWord&lt;/p&gt;</p>
+                                            ★wbrタグあり<p>&lt;p&gt;LongWord&lt;wbr&gt;LongWord&lt;wbr&gt;LongWord&lt;wbr&gt;LongWord&lt;wbr&gt;LongWord&lt;wbr&gt;LongWord&lt;wbr&gt;LongWord&lt;wbr&gt;LongWord&lt;wbr&gt;LongWord&lt;wbr&gt;LongWord&lt;wbr&gt;LongWord&lt;wbr&gt;LongWord&lt;wbr&gt;LongWord&lt;wbr&gt;LongWord&lt;wbr&gt;&lt;/p&gt;</p>
+                                        </span>
+                                        <p>■ ブラウザ表示</p>
+                                        <span class="sample_code pd-sample_code">
+                                            ☆wbrタグなし<p class="frame mg-btm-20">LongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWord</p>
+                                            ★wbrタグあり<p class="frame">LongWord<wbr>LongWord<wbr>LongWord<wbr>LongWord<wbr>LongWord<wbr>LongWord<wbr>LongWord<wbr>LongWord<wbr>LongWord<wbr>LongWord<wbr>LongWord<wbr>LongWord<wbr>LongWord<wbr>LongWord<wbr></p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="contents_area_box">
+                                <h2 class="contents_area_box_title topics-title" id="topicsIns">&lt;ins&gt;</h2>
+                                <div class="contents_area_box_item">
+                                    <div class="topics_area">
+                                        <p class="text-main">その部分が後から追加されたものであることを明示したい場合に使用。<br>
+                                        </p>
+                                        <p>■ サンプルコード</p>
+                                        <span class="sample_code pd-sample_code">
+                                            &lt;ul&gt;<br>&lt;li&gt;リスト項目&lt;/li&gt;<br>&lt;li&gt;追加されたリスト項目2&lt;/li&gt;<br>&lt;/ul&gt;
+                                        </span>
+                                        <p>■ ブラウザ表示</p>
+                                        <span class="sample_code pd-sample_code">
+                                            <ul>
+                                                <li>リスト項目</li>
+                                                <li><ins>追加されたリスト項目</ins></li>
+                                            </ul>
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="contents_area_box">
+                                <h2 class="contents_area_box_title topics-title" id="topicsDel">&lt;del&gt;</h2>
+                                <div class="contents_area_box_item">
+                                    <div class="topics_area">
+                                        <p class="text-main">その部分が後から削除されたものであることを明示したい場合に使用。
+                                        </p>
+                                        <p>■ サンプルコード</p>
+                                        <span class="sample_code pd-sample_code">
+                                            &lt;p&gt;&lt;del&gt;削除されたテキスト。&lt;/del&gt;一般のテキスト。&lt;/p&gt;
+                                        </span>
+                                        <p>■ ブラウザ表示</p>
+                                        <span class="sample_code pd-sample_code">
+                                            <p><del>削除されたテキスト。</del>一般のテキスト。</p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="contents_area_box">
+                                <h2 class="contents_area_box_title topics-title" id="topicsPicture">&lt;picture&gt;</h2>
+                                <div class="contents_area_box_item">
+                                    <div class="topics_area">
+                                        <p class="text-main">レスポンシブイメージを文章内に埋め込む。<br>サイズや内容の異なる複数の画像候補を用意しておくことで、ユーザの閲覧環境に適した画像が表示される。<br>※picture要素内には、img要素の配置が必須（source要素の後に置く）。レスポンシブイメージに対応していないブラウザではこのimg要素のsrc属性で指定した画像が表示される。</p>
+                                        <p>■ サンプルコード</p>
+                                        <span class="sample_code pd-sample_code">
+                                            &lt;picture&gt;<br>&lt;source media="(min-width: 1280px)" srcset="large.jpg" /&gt;<br>&lt;img src="small.jpg" alt="サンプル"&gt;<br>&lt;/picture&gt;
+                                        </span>
+                                        <p>■ ブラウザ表示</p>
+                                        <span class="sample_code pd-sample_code">
+                                            <picture>
+                                                <source media="(max-width: 600px)" srcset="../img/smartphone.png" sizes="100vw" />
+                                                <source media="(max-width: 1920px)" srcset="../img/pc.png" sizes="100vw" />
+                                                <img class="img-figure" src="../img/20170620_sample.png"" alt="サンプル" />
+                                            </picture>
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="contents_area_box">
+                                <h2 class="contents_area_box_title topics-title" id="topicsTextArea">&lt;textarea&gt;</h2>
+                                <div class="contents_area_box_item">
+                                    <div class="topics_area">
+                                        <p class="text-main">複数行のテキスト入力欄を作成。<br>詳しいオプションは<cite><a href="http://www.tagindex.com/html5/form/textarea.html">ここ</a></cite>を参照
+                                        </p>
+                                        <p>■ サンプルコード</p>
+                                        <span class="sample_code pd-sample_code">
+                                            &lt;textarea name="example1"&gt;&lt;/textarea&gt;
+                                        </span>
+                                        <p>■ ブラウザ表示</p>
+                                        <span class="sample_code pd-sample_code">
+                                            <textarea name="example" cols="50" rows="10">サンプル</textarea>
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="contents_area_box">
+                                <h2 class="contents_area_box_title topics-title" id="topicsButton">&lt;button&gt;</h2>
+                                <div class="contents_area_box_item">
+                                    <div class="topics_area">
+                                        <p class="text-main">3タイプのボタン（<ruby>送信<rt>submit</rt>、リセット<rt>reset</rt>、汎用<rt>button</rt></ruby>）を作成。<br>
+                                        ※input要素のボタンとは異なり、button要素では内容を持てる（ボタン上に表示される）。また、画像をボタンのラベルとして表示することも可能。<br>詳しいオプションは<cite><a href="http://www.tagindex.com/html5/form/button.html">ここ</a></cite>を参照
+                                        </p>
+                                        <p>■ サンプルコード</p>
+                                        <span class="sample_code pd-sample_code">
+                                            &lt;button type="submit" name="example" value="ボタン"&gt;ボタンの内容&lt;/button&gt;
+                                        </span>
+                                        <p>■ ブラウザ表示</p>
+                                        <span class="sample_code pd-sample_code">
+                                            <button type="button">button</button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="contents_area_box">
+                                <h2 class="contents_area_box_title topics-title" id="topicsForm">&lt;form&gt;</h2>
+                                <div class="contents_area_box_item">
+                                    <div class="topics_area">
+                                        <p class="text-main">入力フォームを作成。この要素内にフォームを構成するパーツを配置。<br>通常、フォームを構成するパーツ（入力欄や送信ボタン等）はform要素内に配置する。<br>詳しいオプションは<cite><a href="http://www.tagindex.com/html5/form/button.html">ここ</a></cite>を参照
+                                        </p>
+                                        <p>■ サンプルコード</p>
+                                        <span class="sample_code pd-sample_code">
+                                            &lt;form&gt;&lt;/form&gt;
+                                        </span>
+                                        <p>■ ブラウザ表示</p>
+                                        <span class="sample_code pd-sample_code">
+                                            <form method="post" action="">
+                                                <p class="mg-btm-20">お名前：<input type="text" name="name"></p>
+                                                <p><input type="submit" value="送信する"></p>
+                                            </form>
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+                    <div id="localNavSmall" class="local_nav-small">
+                        <p class="local_nav-header">Topics Link</p>
+                        <ul class="side_nav-items local_nav-style local_nav_small-style">
+                            <li><a href="#topicsPre" class="localLinks">&lt;pre&gt;</a></li>
+                            <li><a href="#topicsBlockquote" class="localLinks">&lt;blockquote&gt;</a></li>
+                            <li><a href="#topicsHr" class="localLinks">&lt;hr&gt;</a></li>
+                            <li><a href="#topicsOl" class="localLinks">&lt;ol&gt;</a></li>
+                            <li><a href="#topicsDl" class="localLinks">&lt;dl&gt;</a></li>
+                            <li><a href="#topicsDt" class="localLinks">&lt;dt&gt;</a></li>
+                            <li><a href="#topicsDd" class="localLinks">&lt;dd&gt;</a></li>
+                            <li><a href="#topicsFigure" class="localLinks">&lt;figure&gt;</a></li>
+                            <li><a href="#topicsMain" class="localLinks">&lt;main&gt;</a></li>
+                            <li><a href="#topicsCite" class="localLinks">&lt;cite&gt;</a></li>
+                            <li><a href="#topicsQ" class="localLinks">&lt;q&gt;</a></li>
+                            <li><a href="#topicsDfn" class="localLinks">&lt;dfn&gt;</a></li>
+                            <li><a href="#topicsAbbr" class="localLinks">&lt;abbr&gt;</a></li>
+                            <li><a href="#topicsSub" class="localLinks">&lt;sub&gt;</a></li>
+                            <li><a href="#topicsSup" class="localLinks">&lt;sup&gt;</a></li>
+                            <li><a href="#topicsTime" class="localLinks">&lt;time&gt;</a></li>
+                            <li><a href="#topicsMark" class="localLinks">&lt;mark&gt;</a></li>
+                            <li><a href="#topicsRuby" class="localLinks">&lt;ruby&gt;</a></li>
+                            <li><a href="#topicsRt" class="localLinks">&lt;rt&gt;</a></li>
+                            <li><a href="#topicsRtc" class="localLinks">&lt;rtc&gt;</a></li>
+                            <li><a href="#topicsRp" class="localLinks">&lt;rp&gt;</a></li>
+                            <li><a href="#topicsStrong" class="localLinks">&lt;strong&gt;</a></li>
+                            <li><a href="#topicsSpan" class="localLinks">&lt;span&gt;</a></li>
+                            <li><a href="#topicsBr" class="localLinks">&lt;br&gt;</a></li>
+                            <li><a href="#topicsWbr" class="localLinks">&lt;wbr&gt;</a></li>
+                            <li><a href="#topicsIns" class="localLinks">&lt;ins&gt;</a></li>
+                            <li><a href="#topicsDel" class="localLinks">&lt;del&gt;</a></li>
+                            <li><a href="#topicsPicture" class="localLinks">&lt;picture&gt;</a></li>
+                            <li><a href="#topicsTextArea" class="localLinks">&lt;textarea&gt;</a></li>
+                            <li><a href="#topicsButton" class="localLinks">&lt;button&gt;</a></li>
+                            <li><a href="#topicsForm" class="localLinks">&lt;form&gt;</a></li>
+                        </ul>
+                    </div>
+                    <div class="local_nav">
+                        <p class="local_nav-header">Topics Link</p>
+                        <div>
+                            <ul class="side_nav-items local_nav-style">
+                                <li><a href="#topicsPre">&lt;pre&gt;</a></li>
+                                <li><a href="#topicsPre">&lt;pre&gt;</a></li>
+                                <li><a href="#topicsBlockquote">&lt;blockquote&gt;</a></li>
+                                <li><a href="#topicsHr">&lt;hr&gt;</a></li>
+                                <li><a href="#topicsOl">&lt;ol&gt;</a></li>
+                                <li><a href="#topicsDl">&lt;dl&gt;</a></li>
+                                <li><a href="#topicsDt">&lt;dt&gt;</a></li>
+                                <li><a href="#topicsDd">&lt;dd&gt;</a></li>
+                                <li><a href="#topicsFigure">&lt;figure&gt;</a></li>
+                                <li><a href="#topicsMain">&lt;main&gt;</a></li>
+                                <li><a href="#topicsCite">&lt;cite&gt;</a></li>
+                                <li><a href="#topicsQ">&lt;q&gt;</a></li>
+                                <li><a href="#topicsDfn">&lt;dfn&gt;</a></li>
+                                <li><a href="#topicsAbbr">&lt;abbr&gt;</a></li>
+                                <li><a href="#topicsSub">&lt;sub&gt;</a></li>
+                                <li><a href="#topicsSup">&lt;sup&gt;</a></li>
+                                <li><a href="#topicsTime">&lt;time&gt;</a></li>
+                                <li><a href="#topicsMark">&lt;mark&gt;</a></li>
+                                <li><a href="#topicsRuby">&lt;ruby&gt;</a></li>
+                                <li><a href="#topicsRt">&lt;rt&gt;</a></li>
+                                <li><a href="#topicsRtc">&lt;rtc&gt;</a></li>
+                                <li><a href="#topicsRp">&lt;rp&gt;</a></li>
+                                <li><a href="#topicsStrong">&lt;strong&gt;</a></li>
+                                <li><a href="#topicsSpan">&lt;span&gt;</a></li>
+                                <li><a href="#topicsBr">&lt;br&gt;</a></li>
+                                <li><a href="#topicsWbr">&lt;wbr&gt;</a></li>
+                                <li><a href="#topicsIns">&lt;ins&gt;</a></li>
+                                <li><a href="#topicsDel">&lt;del&gt;</a></li>
+                                <li><a href="#topicsPicture">&lt;picture&gt;</a></li>
+                                <li><a href="#topicsTextArea">&lt;textarea&gt;</a></li>
+                                <li><a href="#topicsButton">&lt;button&gt;</a></li>
+                                <li><a href="#topicsForm">&lt;form&gt;</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+/** スライドメニュー */
+   $(function(){
+        $("#iconMenu").click(function() {
+           $("html").toggleClass("nav_style-hide");
+           $(".contents").toggleClass("nav_style-hide");
+           $(".contents").toggleClass("nav_style-blur");
+           $("#sideNav").toggleClass("nav_style-view");
+           $(".icon-menu").toggleClass("icon-close");
+        });
+   });
+/** ローカルメニュー(600px以下) */
+   $(function(){
+        $("#iconLocalNavSmall").click(function() {
+            $(".section").toggleClass("active-local_nav-small");
+            $(".local_nav-small").toggleClass("local_nav_style-view");
+            $(".icon-local_nav").toggleClass("icon-close");
+            return false;
+        });
+
+        $(".localLinks").click(function() {
+            $(".section").toggleClass("active-local_nav-small");
+            $(".local_nav-small").toggleClass("local_nav_style-view");
+            $(".icon-local_nav").toggleClass("icon-close");
+        });
+   });
+</script>
+</html>
